@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Docs: JavaScript Basics</title>
+  <link rel="stylesheet" href="TechnicalDocPage.css" />
+</head>
+<body>
+  <nav id="navbar">
+    <header>JavaScript Docs</header>
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#Variables_and_Data_Types">Variables and Data Types</a>
+    <a class="nav-link" href="#Functions">Functions</a>
+    <a class="nav-link" href="#Control_Structures">Control Structures</a>
+    <a class="nav-link" href="#DOM_Manipulation">DOM Manipulation</a>
+  </nav>
+
+  <main id="main-doc">
+    <section id="Introduction" class="main-section">
+      <header>Introduction</header>
+      <p>JavaScript is a powerful, versatile scripting language used for web development.</p>
+      <p>It can be used for both frontend and backend development.</p>
+      <p>JavaScript is dynamically typed and event-driven.</p>
+      <p>It runs in the browser and on the server with Node.js.</p>
+      <p>This documentation will guide you through core JavaScript concepts.</p>
+      <code>console.log('Hello, JavaScript!');</code>
+    </section>
+
+    <section id="Variables_and_Data_Types" class="main-section">
+      <header>Variables and Data Types</header>
+      <p>Variables store data in JavaScript. You can declare them with let, const, or var.</p>
+      <p>Data types include string, number, boolean, object, null, undefined, and symbol.</p>
+      <p>Use const when the value should not change.</p>
+      <p>Use let when the value may change.</p>
+      <p>Avoid using var in modern JavaScript.</p>
+      <code>let age = 30;</code>
+      <code>const name = "Alice";</code>
+      <ul>
+        <li>String</li>
+        <li>Number</li>
+        <li>Boolean</li>
+        <li>Null</li>
+        <li>Undefined</li>
+      </ul>
+    </section>
+
+    <section id="Functions" class="main-section">
+      <header>Functions</header>
+      <p>Functions are reusable blocks of code.</p>
+      <p>You can define them using function declarations or expressions.</p>
+      <p>Arrow functions are a concise way to write functions.</p>
+      <p>Functions can take parameters and return values.</p>
+      <p>You can also nest functions within functions.</p>
+      <code>function greet(name) { return "Hello " + name; }</code>
+      <code>const add = (a, b) => a + b;</code>
+      <ul>
+        <li>Function Declaration</li>
+        <li>Function Expression</li>
+        <li>Arrow Function</li>
+        <li>Callback Function</li>
+        <li>Anonymous Function</li>
+      </ul>
+    </section>
+
+    <section id="Control_Structures" class="main-section">
+      <header>Control Structures</header>
+      <p>Control structures determine the flow of execution in code.</p>
+      <p>Use if/else for conditional execution.</p>
+      <p>Use switch for multiple branches.</p>
+      <p>Loops like for and while iterate over code blocks.</p>
+      <p>Use break and continue to control loop execution.</p>
+      <code>if (x > 0) { console.log("Positive"); }</code>
+      <code>for (let i = 0; i < 5; i++) { console.log(i); }</code>
+    </section>
+
+    <section id="DOM_Manipulation" class="main-section">
+      <header>DOM Manipulation</header>
+      <p>The DOM represents the structure of a webpage.</p>
+      <p>JavaScript can modify HTML and CSS via the DOM.</p>
+      <p>Use querySelector or getElementById to select elements.</p>
+      <p>You can change text, styles, attributes, and more.</p>
+      <p>Event listeners respond to user interactions.</p>
+      <code>document.getElementById("title").textContent = "New Title";</code>
+      <code>document.querySelector(".btn").addEventListener("click", handleClick);</code>
+      <ul>
+        <li>getElementById</li>
+        <li>querySelector</li>
+        <li>innerHTML</li>
+        <li>textContent</li>
+        <li>addEventListener</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
